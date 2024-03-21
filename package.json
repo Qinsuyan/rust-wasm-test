@@ -1,0 +1,21 @@
+{
+  "name": "rust-wasm",
+  "version": "1.0.0",
+  "description": "a test project of rust WebAssembly",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx vite",
+    "build-dev":"npm run build-rust && rm -rf ./node_modules/rust-wasm && pnpm install",
+    "build-rust": "wasm-pack build ./rust-wasm/ -d ../rustdist"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "rust-wasm": "file:./rustdist",
+    "vite": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "vite-plugin-wasm": "^3.3.0"
+  }
+}

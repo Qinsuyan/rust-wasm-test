@@ -39,5 +39,17 @@
 
 * 执行
     ```shell
-    cargo generate --git https://github.com/rustwasm/wasm-pack-template
+    pnpm install
     ```
+
+## 开发指南
+
+* 更改了rust代码后，要重新编译rust代码
+
+* 可以使用`npm run build-rust`命令来编译rust
+
+* 或者使用`npm run build-dev`命令，编译rust代码后，重新安装到node_modules
+
+## 如果有其他不明白的
+
+* 去看官方文档！
